@@ -1,51 +1,62 @@
-## Developer Portfolio Landing Page Template
+# Excel Data Cleaning & Transformation Project
 
-### Introduction
+This repository showcases how I used **Microsoft Excel with Power Query** to transform raw, inconsistent sales data into a clean, structured dataset ready for analysis. The project highlights professional data cleaning, transformation, and validation techniques commonly required in real-world business environments.  
 
-Use this template if you need a quick developer / data science portfolio! Based on a Minimal Jekyll theme for GitHub Pages.
+---
 
-<img src="images/demo.gif?raw=true"/>
+## Project Overview
+The dataset provided was messy and unstructured, containing duplicate records, inconsistent categories, blank values, and combined fields (date and time in a single column). My task was to prepare the data for accurate analysis and reporting by applying systematic cleaning and transformation steps.
 
-### Installation
+---
 
-See full step by step tutorial [on Medium](https://medium.com/@evanca/set-up-your-portfolio-website-in-less-than-10-minutes-with-github-pages-d0efa8ff56fd).
-___
+## Key Steps Performed
 
-You can use the editor on GitHub to maintain and preview the content for your website in Markdown files.
+1. **Autofit Columns and Rows**  
+   Adjusted the structure for clarity and readability.  
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+2. **Separate Date and Time**  
+   Split combined fields into distinct **Date** and **Time** columns for better trend and time-based analysis.  
 
-### Markdown
+3. **Data Cleaning in Power Query**  
+   - Removed duplicates (using *Remove Duplicates* and `=UNIQUE()` formula validation).  
+   - Trimmed excess spaces and eliminated blank cells.  
+   - Standardized categorical data, such as correcting misspellings in the *Rating* column (e.g., fixing “Excellecent” → “Excellent”).  
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+4. **Data Transformation**  
+   - Converted cleaned data into an Excel table for structure.  
+   - Cross-checked numerical logic (Quantity × Price per Unit) to validate ratings (*Excellent, Good, Average, Poor*).  
 
-```markdown
-Syntax highlighted code block
+5. **Validation**  
+   Verified column data types, formatting, and overall consistency to ensure the dataset was error-free and analysis-ready.  
 
-# Header 1
-## Header 2
-### Header 3
+---
 
-- Bulleted
-- List
+## Outcome
+The messy raw file was successfully transformed into a **clean, reliable dataset**. This process ensured:  
+- Accurate reporting and analysis.  
+- Trustworthy insights for decision-making.  
+- A professional, reusable data preparation workflow.  
 
-1. Numbered
-2. List
+---
 
-**Bold** and _Italic_ and `Code` text
+## Tools & Skills Demonstrated
+- **Microsoft Excel** (Power Query, Formulas, Tables)  
+- **Data Cleaning & Validation**  
+- **Data Transformation & Preparation**  
+- **Analytical Readiness for Reporting**  
 
-[Link](url) and ![Image](src)
-```
+---
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Screenshots
+Screenshots of key steps have been added to the `/screenshots` folder, including:  
+- Raw dataset import  
+- Duplicate removal  
+- Rating corrections  
+- Final cleaned dataset  
 
-### Roadmap
+---
 
-See the [open issues](https://github.com/evanca/machine-learning_optimizing-app-offers-with-starbucks/issues) for a list of proposed features (and known issues).
-___
+## About This Project
+This project is part of my data analytics portfolio under **BeyondDashboards**, where I showcase how I use tools like **Excel, Power BI, SQL, and Python** to transform raw data into actionable insights for business growth.  
 
-### References
-
-[1] Jekyll theme "Minimal" for GitHub Pages: https://github.com/pages-themes/minimal (CC0 1.0 Universal License)
-<br>[2] Dummy photo via: https://pixabay.com/photos/man-male-adult-person-caucasian-1209494/ (Pixabay License)
-<br>[3] Dummy thumbnail image created by rawpixel.com: https://www.freepik.com/free-vector/set-elements-infographic_2807573.htm (Standard Freepik License)
+---
